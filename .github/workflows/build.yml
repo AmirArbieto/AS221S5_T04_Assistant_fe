@@ -23,7 +23,7 @@ jobs:
         run: echo ${{ secrets.DOCKER_TOKEN }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
       - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/as221s5_t04_fe:latest . ddd
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/as221s5_t04_fe:latest .
 
 
       - name: Push Docker Image to Docker Hub
